@@ -1,0 +1,74 @@
+{
+  "fileName": "manifest",
+  "layer": "CUSTOMER_BASE",
+  "fileType": "appdescr_variant",
+  "reference": "ui.s2p.mm.poitem.monitors1",
+  "id": "customer.ui.s2p.mm.poitem.monitors1",
+  "namespace": "apps/ui.s2p.mm.poitem.monitors1/appVariants/customer.ui.s2p.mm.poitem.monitors1/",
+  "content": [
+    {
+      "changeType": "appdescr_ui5_addNewModel",
+      "content": {
+        "dataSource": {
+          "customer.PrPoItemDataSource": {
+            "uri": "/sap/opu/odata/sap/MM_PUR_POITEMACCT_MNTR_SRV",
+            "type": "OData",
+            "settings": {
+              "odataVersion": "2.0"
+            }
+          }
+        },
+        "model": {
+          "customer.PrPoItem": {
+            "dataSource": "customer.PrPoItemDataSource",
+            "preload": true,
+            "settings": {}
+          }
+        }
+      }
+    },
+    {
+      "changeType": "appdescr_app_setTitle",
+      "content": {},
+      "texts": {
+        "i18n": "i18n/i18n.properties"
+      }
+    },
+    {
+      "changeType": "appdescr_ui5_addNewModelEnhanceWith",
+      "content": {
+        "modelId": "i18n|sap.suite.ui.generic.template.AnalyticalListPage|C_PurchaseOrderItemMoni"
+      },
+      "texts": {
+        "i18n": "i18n/AnalyticalListPage/C_PurchaseOrderItemMoni/i18n.properties"
+      }
+    },
+    {
+      "changeType": "appdescr_ui5_addNewModelEnhanceWith",
+      "content": {
+        "modelId": "i18n|sap.suite.ui.generic.template.AnalyticalListPage|C_PurchaseOrderItemMoniResults"
+      },
+      "texts": {
+        "i18n": "i18n/AnalyticalListPage/C_PurchaseOrderItemMoni/i18n.properties"
+      }
+    },
+    {
+      "changeType": "appdescr_ui5_addNewModelEnhanceWith",
+      "content": {
+        "modelId": "i18n|sap.suite.ui.generic.template.ObjectPage|C_PurchaseOrderItemMoni"
+      },
+      "texts": {
+        "i18n": "i18n/ObjectPage/C_PurchaseOrderItemMoni/i18n.properties"
+      }
+    },
+    {
+      "changeType": "appdescr_ui5_addNewModelEnhanceWith",
+      "content": {
+        "modelId": "i18n|sap.suite.ui.generic.template.ObjectPage|C_PurchaseOrderItemMoniResults"
+      },
+      "texts": {
+        "i18n": "i18n/ObjectPage/C_PurchaseOrderItemMoniResults/i18n.properties"
+      }
+    }
+  ]
+}

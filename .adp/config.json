@@ -1,0 +1,11 @@
+{
+  "componentname": "ui.s2p.mm.poitem.monitors1",
+  "safeMode": false,
+  "appvariant": "ui.s2p.mm.poitem.monitors1",
+  "layer": "CUSTOMER_BASE",
+  "sourceSystem": "S4D130",
+  "isOVPApp": false,
+  "isFioriElement": true,
+  "environment": "ABAP",
+  "ui5Version": "1.71.56"
+}

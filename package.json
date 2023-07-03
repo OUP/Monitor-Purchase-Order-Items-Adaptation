@@ -1,0 +1,20 @@
+{
+	"name": "ui.s2p.mm.poitem.monitors1",
+	"version": "0.0.1",
+	"devDependencies": {
+		"@openui5/ts-types": "1.60.x",
+		"@sap/ui5-builder-webide-extension": "1.0.x"
+	},
+	"scripts": {
+		"build": "ui5 build --include-task=generateCachebusterInfo"
+	},
+	"ui5": {
+		"dependencies": [
+			"@sap/ui5-builder-webide-extension"
+		]
+	},
+	"dependencies": {
+		"@ui5/cli": "^3.2.0",
+		"generator-easy-ui5": "^3.6.1"
+	}
+}

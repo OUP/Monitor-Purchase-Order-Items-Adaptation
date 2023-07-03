@@ -1,0 +1,27 @@
+<!-- Use stable and unique IDs!-->
+<core:FragmentDefinition xmlns:core='sap.ui.core'
+	xmlns='sap.ui.comp.smartfilterbar'
+	xmlns:m='sap.m'>
+
+	<ControlConfiguration id="CostCenter" key="CostCenter" label="Cost Center" visibleInAdvancedArea="true">
+		<customControl>
+			<m:MultiInput id="cost-center-mi-id" valueHelpRequest=".extension.customer.ui.s2p.mm.poitem.monitors1.ListPageExt.onCostCenterVH" suggestionRows="{path: 'customer.PrPoItem>/I_MM_CostCenterValueHelp', length: 10}">
+				<m:suggestionColumns>
+					<m:Column id="cost-center-c1-id">
+						<m:Label id="cost-center-c1-label-id" text="Cost Center"/>
+					</m:Column>
+					<m:Column id="cost-center-c2-id">
+						<m:Label id="cost-center-c2-label-id" text="Cost Center Name"/>
+					</m:Column>
+				</m:suggestionColumns>
+				<m:suggestionRows>
+					<m:ColumnListItem id="cost-center-cl-item-id">
+						<m:Label id="cost-center-c1-value-id" text="{customer.PrPoItem>CostCenter}" />
+						<m:Label id="cost-center-c2-value-id" text="{customer.PrPoItem>CostCenter_Text}" />
+					</m:ColumnListItem>
+				</m:suggestionRows>
+			</m:MultiInput>
+		</customControl>
+	</ControlConfiguration>
+
+</core:FragmentDefinition>

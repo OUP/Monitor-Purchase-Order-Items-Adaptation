@@ -1,0 +1,43 @@
+{
+	"fileName": "id_1687434813676_183_addXML",
+	"fileType": "change",
+	"changeType": "addXML",
+	"moduleName": "",
+	"reference": "customer.ui.s2p.mm.poitem.monitors1",
+	"packageName": "$TMP",
+	"content": {
+		"fragmentPath": "fragments/CostCenterFilter.fragment.xml",
+		"targetAggregation": "controlConfiguration",
+		"index": 31
+	},
+	"selector": {
+		"id": "ui.s2p.mm.poitem.monitors1::sap.suite.ui.generic.template.AnalyticalListPage.view.AnalyticalListPage::C_PurchaseOrderItemMoniResults--template::SmartFilterBar",
+		"idIsLocal": false
+	},
+	"layer": "CUSTOMER_BASE",
+	"texts": {},
+	"namespace": "apps/ui.s2p.mm.poitem.monitors1/changes/",
+	"projectId": "customer.ui.s2p.mm.poitem.monitors1",
+	"creation": "2023-06-22T11:53:33.787Z",
+	"originalLanguage": "EN",
+	"conditions": {},
+	"context": "",
+	"support": {
+		"generator": "Change.createInitialFileContent",
+		"service": "",
+		"user": "",
+		"sapui5Version": "1.71.56",
+		"sourceChangeFileName": "",
+		"compositeCommand": ""
+	},
+	"oDataInformation": {},
+	"dependentSelector": {},
+	"validAppVersions": {
+		"creation": "7.0.37",
+		"from": "7.0.37",
+		"to": "7.0.37"
+	},
+	"jsOnly": false,
+	"variantReference": "",
+	"appDescriptorChange": false
+}

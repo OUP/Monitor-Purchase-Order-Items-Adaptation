@@ -1,0 +1,40 @@
+{
+	"fileName": "id_1686759179758_176_codeExt",
+	"fileType": "change",
+	"changeType": "codeExt",
+	"moduleName": "",
+	"reference": "customer.ui.s2p.mm.poitem.monitors1",
+	"packageName": "$TMP",
+	"content": {
+		"codeRef": "coding/ListPageExt.js"
+	},
+	"selector": {
+		"controllerName": "sap.suite.ui.generic.template.AnalyticalListPage.view.AnalyticalListPage"
+	},
+	"layer": "CUSTOMER_BASE",
+	"texts": {},
+	"namespace": "apps/ui.s2p.mm.poitem.monitors1/changes/",
+	"projectId": "customer.ui.s2p.mm.poitem.monitors1",
+	"creation": "2023-06-14T16:12:59.761Z",
+	"originalLanguage": "EN",
+	"conditions": {},
+	"context": "",
+	"support": {
+		"generator": "Change.createInitialFileContent",
+		"service": "",
+		"user": "",
+		"sapui5Version": "1.71.56",
+		"sourceChangeFileName": "",
+		"compositeCommand": ""
+	},
+	"oDataInformation": {},
+	"dependentSelector": {},
+	"validAppVersions": {
+		"creation": "7.0.37",
+		"from": "7.0.37",
+		"to": "7.0.37"
+	},
+	"jsOnly": false,
+	"variantReference": "",
+	"appDescriptorChange": false
+}

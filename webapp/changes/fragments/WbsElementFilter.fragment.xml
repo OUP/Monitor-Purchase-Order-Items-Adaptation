@@ -1,0 +1,27 @@
+<!-- Use stable and unique IDs!-->
+<core:FragmentDefinition xmlns:core='sap.ui.core'
+	xmlns='sap.ui.comp.smartfilterbar'
+	xmlns:m='sap.m'>
+
+	<ControlConfiguration id="WbsElement1" key="WbsElement1" label="WBS Element" visibleInAdvancedArea="true">
+		<customControl>
+			<m:MultiInput id="wbs-element1-mi-id" valueHelpRequest=".extension.customer.ui.s2p.mm.poitem.monitors1.ListPageExt.onWbsElementVH" suggestionRows="{path: 'customer.PrPoItem>/I_MM_WBSElementValueHelp', length: 10}">
+				<m:suggestionColumns>
+					<m:Column id="wbs-element1-c1-id">
+						<m:Label id="wbs-element1-c1-label-id" text="WBS Element"/>
+					</m:Column>
+					<m:Column id="wbs-element1-c2-id">
+						<m:Label id="wbs-element1-c2-label-id" text="WBS Description"/>
+					</m:Column>
+				</m:suggestionColumns>
+				<m:suggestionRows>
+					<m:ColumnListItem id="wbs-element1-cl-item-id">
+						<m:Label id="wbs-element1-c1-value-id" text="{customer.PrPoItem>WBSElement}" />
+						<m:Label id="wbs-element1-c2-value-id" text="{customer.PrPoItem>WBSDescription}" />
+					</m:ColumnListItem>
+				</m:suggestionRows>
+			</m:MultiInput>
+		</customControl>
+	</ControlConfiguration>
+
+</core:FragmentDefinition>
