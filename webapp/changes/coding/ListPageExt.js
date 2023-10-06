@@ -94,6 +94,7 @@ sap.ui.define(
               // wbs element filter
               const oWbsElement = this.byId("wbs-element1-mi-id");
               let aToken = oWbsElement.getTokens();
+              let aFilters1 = [];
               let aFilters = [];
               let element;
               let index = 0;
@@ -102,7 +103,7 @@ sap.ui.define(
                 for (index = 0; index < aToken.length; index++) {
                   element = aToken[index];
 
-                  aFilters.push(
+                  aFilters1.push(
                     new Filter({
                       path: "WbsElement1",
                       operator: FilterOperator.EQ,
@@ -110,6 +111,14 @@ sap.ui.define(
                     })
                   );
                 }
+
+                // push filter in to main filter
+                aFilters.push(
+                  new Filter({
+                    filters: aFilters1,
+                    and: false,
+                  })
+                );
               }
 
               // asset filter
@@ -121,7 +130,7 @@ sap.ui.define(
                 for (index = 0; index < aToken.length; index++) {
                   element = aToken[index];
 
-                  aFilters.push(
+                  aFilters1.push(
                     new Filter({
                       path: "Asset",
                       operator: FilterOperator.EQ,
@@ -129,6 +138,14 @@ sap.ui.define(
                     })
                   );
                 }
+
+                // push filter in to main filter
+                aFilters.push(
+                  new Filter({
+                    filters: aFilters1,
+                    and: false,
+                  })
+                );
               }
 
               // cost center filter
@@ -140,7 +157,7 @@ sap.ui.define(
                 for (index = 0; index < aToken.length; index++) {
                   element = aToken[index];
 
-                  aFilters.push(
+                  aFilters1.push(
                     new Filter({
                       path: "CostCenter",
                       operator: FilterOperator.EQ,
@@ -148,6 +165,14 @@ sap.ui.define(
                     })
                   );
                 }
+
+                // push filter in to main filter
+                aFilters.push(
+                  new Filter({
+                    filters: aFilters1,
+                    and: false,
+                  })
+                );
               }
 
               // asset filter
@@ -159,7 +184,7 @@ sap.ui.define(
                 for (index = 0; index < aToken.length; index++) {
                   element = aToken[index];
 
-                  aFilters.push(
+                  aFilters1.push(
                     new Filter({
                       path: "OrderNumber",
                       operator: FilterOperator.EQ,
@@ -167,6 +192,14 @@ sap.ui.define(
                     })
                   );
                 }
+
+                // push filter in to main filter
+                aFilters.push(
+                  new Filter({
+                    filters: aFilters1,
+                    and: false,
+                  })
+                );
               }
 
               // sales order filter
@@ -178,7 +211,7 @@ sap.ui.define(
                 for (index = 0; index < aToken.length; index++) {
                   element = aToken[index];
 
-                  aFilters.push(
+                  aFilters1.push(
                     new Filter({
                       path: "SalesOrder",
                       operator: FilterOperator.EQ,
@@ -186,6 +219,14 @@ sap.ui.define(
                     })
                   );
                 }
+
+                // push filter in to main filter
+                aFilters.push(
+                  new Filter({
+                    filters: aFilters1,
+                    and: false,
+                  })
+                );
               }
 
               // add filters if exist
